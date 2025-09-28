@@ -105,7 +105,7 @@ void showRedTextOverlay() {
     std::thread overlayThread([]() {
         HWND overlay = createRedOverlay();
         if (overlay) {
-            std::this_thread::sleep_for(std::chrono::seconds(3));
+            std::this_thread::sleep_for(std::chrono::seconds(15));
             DestroyWindow(overlay);
         }
         
